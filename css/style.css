@@ -1,0 +1,224 @@
+﻿/* CSS Document */
+/*@import url("reset.css");*/
+
+@media screen {
+	body {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-size: 16px; margin:0;}
+	.top { height: 140px; margin-top: 10px;}
+	h1 {top: -1000px; position: absolute;}
+	h2, h3 {color: #04a100;}
+	.top .cover {position: relative; margin: 0 auto; max-width: 1200px; width: 100%;}
+	.topinfo {max-width: 1200px; font-size: 0.9rem; width: 100%; padding-left: 220px; box-sizing: border-box;}
+	.logo {float: left;}
+	.topinfo td { padding: 0 1rem; border-right: 1px solid #04a100;}
+	.topinfo td:last-child {border-right: none;}
+	.lista {background-color: #04a100; width: 100vw; left:0; top:100px; position: absolute; height: 50px; max-width: 100%;}
+	.menu {max-width: 1200px; width: 100%; text-align: left; margin: 0 auto;}
+	.menu ul {list-style-type: none;list-style-position: inside; margin-left: -40px;}
+	.menu ul li {display: inline-block; padding: 0 1.5rem 0 1.5rem; border-right: solid 1px white; color: white;}
+	.menu ul li:last-child {border-right: none;}
+	.menu a {font-weight: bold; color: white; text-decoration: none;}
+	.menu a:hover {color: black;}
+	.content {max-width: 1200px; width: 100%; text-align: left; margin: 0 auto; position: relative; }
+	.main, .side {float: right; display:inline-block; width: 60%; box-sizing: border-box; padding: 1rem; }
+	.main_full {display:block; width: 100%; box-sizing: border-box; padding: 1rem; }
+	.side {width: 39%;}
+	.side img {max-width: 100%; height:auto; display: block;}
+	.shortimg {border: 1px solid #999; width: 9rem; height: 9rem; display:inline-block; float: left; margin-right: 10px; background-size: cover;}
+	p {text-align: justify; line-height: 1.2;} 
+	footer {margin: auto; text-align: center; font-weight: 300; padding: 1rem; background-color: rgba(0,0,0,0.80); color: #aaa;	font-size: 80%; width: 100vw; max-width: 100%; box-sizing: border-box;}
+	.divider {clear: both;}
+	.foot_content {max-width: 1200px; font-size: 0.9rem; width: 100%; box-sizing: border-box; margin: 0 auto;}
+	footer .pulka {width: 48%; float: left; text-align: left; box-sizing: border-box; padding-left: 20%;}
+	.pulka {width: 48%; float: left; text-align: left; box-sizing: border-box;}
+	form {}
+	form label {width: 100px; display: inline-block; padding: 10px 0;}
+	
+}
+@media screen and (max-width:800px){
+	.main {width: 50%; }
+	.side {width: 49%;}
+}
+@media screen and (max-width:600px){
+	body {font-size: 14px;}
+	.main, .side {width: 100%; float: none; }
+	.topinfo {display: none;}
+	.shortimg {width: 8rem; height: 8rem;}
+}
+@media screen and (max-width:450px){
+	.pulka {width: 100%; float: none; text-align: left;display: block; margin-bottom: 2rem;}
+}	
+
+
+
+/* slides */
+#slides {
+      display: none;
+	  margin: -20px -20px 0 -20px;
+	  
+}
+
+ #slides .slidesjs-navigation {
+      margin-top:0px;
+	  font-size: 0px;
+    }
+
+    #slides .slidesjs-previous {
+      margin-right: 5px;
+      position: absolute;
+	  z-index:100;
+	  margin-top: -430px;
+	  margin-left: -85px;
+    }
+
+    #slides .slidesjs-next {
+      position: absolute;
+	  z-index:100;
+	  margin-left: 1027px;
+	  margin-top: -430px;
+      
+	  
+    }
+
+    .slidesjs-pagination {
+	display:none;
+      margin: -60px 0 0 10px;
+      width: 1px;
+      list-style: none;
+	  text-align:center;
+	  
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+	display: block;
+	width: 40px;
+	height: 2px;
+	margin: 7px 2px 0 2px;
+	background-color: #DDD;
+	
+	overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-color: #9C2729;
+    }
+
+
+    .slidesjs-pagination li a[data-slidesjs-item="0"].active,
+    .slidesjs-pagination li a[data-slidesjs-item="0"]:hover.active {
+      background-color: #D90003;
+    }
+	.slidesjs-pagination li a[data-slidesjs-item="1"].active,
+    .slidesjs-pagination li a[data-slidesjs-item="1"]:hover.active {
+      background-color: #a5559b;
+    }
+	.slidesjs-pagination li a[data-slidesjs-item="2"].active,
+    .slidesjs-pagination li a[data-slidesjs-item="2"]:hover.active {
+      background-color: #F08A21;
+    }
+	.slidesjs-pagination li a[data-slidesjs-item="3"].active,
+    .slidesjs-pagination li a[data-slidesjs-item="3"]:hover.active {
+      background-color: #006738;
+    }
+	.slidesjs-pagination li a[data-slidesjs-item="4"].active,
+    .slidesjs-pagination li a[data-slidesjs-item="4"]:hover.active {
+      background-color: #b1b81e;
+    }
+	.slidesjs-pagination li a[data-slidesjs-item="5"].active,
+    .slidesjs-pagination li a[data-slidesjs-item="5"]:hover.active {
+      background-color: #8d7661;
+    }
+	.slidesjs-pagination li a[data-slidesjs-item="6"].active,
+    .slidesjs-pagination li a[data-slidesjs-item="6"]:hover.active {
+      background-color: #F05A28;
+    }
+	.slidesjs-pagination li a[data-slidesjs-item="7"].active,
+    .slidesjs-pagination li a[data-slidesjs-item="7"]:hover.active {
+      background-color: #3B63AE;
+    }
+	.slidesjs-pagination li a[data-slidesjs-item="8"].active,
+    .slidesjs-pagination li a[data-slidesjs-item="8"]:hover.active {
+      background-color: #54a6b0;
+    }
+	
+	
+	
+    .slidesjs-pagination li a:hover {
+	background-color: #9C2729;
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #DDD
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #000
+    }
+#slides a {
+	text-decoration:none;
+}
+#slides a.slidesjs-previous slidesjs-navigation {
+	margin: -360px 0 0 0;
+	position:absolute;
+	z-index: 100;
+}
+
+/**/
+.fotogal {
+	margin: auto;
+}
+.galimg {
+	border: 1px solid #CCCCCC;
+	overflow: hidden;
+	width: 165px;
+	height: 165px;
+}
+.mainimg {
+	/*border: 1px solid #CCCCCC; */
+	overflow: hidden;
+	width: 150px;
+	height: 150px;
+	float:left;
+	margin-right: 10px;
+}
+h2.news, h2.news a {
+
+	text-decoration:none;
+	cursor:pointer;
+	cursor:hand;
+	margin-top: 0;
+}
+.newsdatum {
+	font-size: 12px;
+	color: #999;
+	font-family: Tahoma, Helvetica, Arial, sans-serif;
+	margin-top:-20px;
+}
+.newsakce {
+	font-size: 20px;
+	color: #A4A200;
+	font-family: Tahoma, Helvetica, Arial, sans-serif;
+}
+.newsdiv {
+	clear:both;
+	border-bottom:#E4E4E4 dotted 1px;
+	height: 10px;
+	margin: 0 0 20px 0;
+}
+.fullnews {
+	display: none;
+}
+#novinky {
+	display:table;
+	margin:0;
+	padding:0;
+}
+.divider_white {border-top: dotted 1px #aaa;}
+/* galerie, novinky */
